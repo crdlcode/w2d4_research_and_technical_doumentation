@@ -74,3 +74,5 @@ a.first(2)  #=> ["q", "r"]
 # return type: oject or nik
 # example:
 a = %w( ant bat cat dog )
+a.delete_at (2) #=> "cat"
+a               #=> ["ant","bat","dog"]
