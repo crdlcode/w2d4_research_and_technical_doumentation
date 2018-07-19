@@ -57,14 +57,20 @@ puts "now's the time".split #=> ["now's","the", "time"]
 "hello".start_with?("heaven", "paradise") #=> false
 
 # ----------------------Array---------------------------
-# *****start_with?*****
-# divides str into substrings returning an array of these substrings
+
+# *****first*****
+# Returns the first element, or the first n elements, of the array. If the array is empty, the first form returns nil, and the second form returns an empty array.
 # arguments: no arguments
-# return type: Boolean
+# return type: object or nil
 # example:
 
+a = [ "q", "r", "s", "t" ]
+a.first     #=> "q"
+a.first(2)  #=> ["q", "r"]
 
-first
-delete_at
-delete
-pop
+# *****delete_at*****
+# Deletes the element at the specified index, returning that element, or nil if the index is out of range.
+# arguments: no arguments
+# return type: oject or nik
+# example:
+a = %w( ant bat cat dog )
